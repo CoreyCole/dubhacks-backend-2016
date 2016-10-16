@@ -28,7 +28,6 @@ app.use(bodyParser.json());
 
 // Add headers
 app.use(function (req, res, next) {
-  console.log('here');
   // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
 
