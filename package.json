@@ -1,0 +1,28 @@
+{
+  "name": "dubhacks-backend-2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoreyCole/dubhacks-backend-2016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoreyCole/dubhacks-backend-2016/issues"
+  },
+  "homepage": "https://github.com/CoreyCole/dubhacks-backend-2016#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "clarifai": "^2.0.9",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "lodash": "^4.16.4",
+    "mongoose": "^4.6.3"
+  }
+}
