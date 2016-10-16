@@ -29,6 +29,7 @@ app.use(bodyParser.json());
 // Add headers
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
+  console.log(req.body);
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
 
   // Request methods you wish to allow
@@ -88,7 +89,7 @@ app.post('/api/v1/items/:itemId/history/new', function (req, res) {
         },
         { safe: true, upsert: true },
         function (err, model) {
-          console.log(err);
+          console.log(err.data);
         }
       );
       return res.status(200).json('success!');
